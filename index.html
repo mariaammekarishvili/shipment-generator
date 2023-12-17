@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/679/679821.png"
+          alt="box"
+        />
+        <h1>Shipment Generator</h1>
+      </header>
+
+      <form action="">
+        <label for="quantity">Order Quantity</label>
+        <input type="number" id="quantity" name="quantity" />
+        <span>Enter a whole number</span>
+
+        <label for="size">Pack Sizes (Optinal)</label>
+        <input
+          type="text"
+          id="size"
+          name="size"
+          placeholder="250, 500, 1000, 2000, 5000"
+        />
+        <span>Enter a series of pack sizes divided by comma (,)</span>
+
+        <div>
+          If you choose to leave the Pack Sizes empy, default pack size on
+          server side will be used when generating your shipment.
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
